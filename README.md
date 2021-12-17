@@ -25,6 +25,6 @@ REQUISITOS
 
 7 PASSO - APÓS ISSO CERTIFIQUE QUE VOCÊ ESTA NA PASTA SERVER E RODE UM 'yarn start' PARA INICIAR A APLICAÇÃO
 
-9 PASSO - ME SIGA NO INSTA - <a href="https://www.instagram.com/ikauan.costa/" target="_blank"/>
+9 PASSO - ME SIGA NO INSTA - @ikauancosta
 
 
