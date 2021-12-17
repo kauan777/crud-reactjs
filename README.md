@@ -3,7 +3,9 @@
 REQUISITOS
 
  MySql
+ <br/>
  Node
+ <br/>
  GIT
 
 - 1 PASSO - CRIE UM BANCO DE DADOS CHAMADO db_crudnode
