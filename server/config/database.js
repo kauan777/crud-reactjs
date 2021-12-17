@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 
-const db = new Sequelize('db_crudnode', 'root', 'kauansql2727#',{
+const db = new Sequelize('db_crudnode', 'root', '',{
     dialect: 'mysql',
     host: 'localhost'
 });
