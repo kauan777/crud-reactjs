@@ -14,14 +14,10 @@ const User = db.define('tbl_users', {
         type: DataTypes.STRING(30),
         allowNull: false
     },
-    email_user: {
-        type: DataTypes.STRING(50),
+    func_user: {
+        type: DataTypes.STRING(30),
         allowNull: false,
         unique: true
-    },
-    password_user: {
-        type: DataTypes.STRING(15),
-        allowNull: false,
     },
     photo_user: {
         type: DataTypes.STRING(200),

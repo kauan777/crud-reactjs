@@ -1,28 +1,5 @@
 import User from "../models/userModel.js"
-import jwt from 'jsonwebtoken'
-import { promisify } from "util";
 
-export async function validate(req, res, next){
-
-    const { authorization } = req.headers;
-
-    console.log(req.headers)
-
-
-    if(!authorization){
-        return res.sendStatus(401);
-    }
-
-    const [, token] = authorization.split(' ');
-
-    try{
-        await promisify(jwt.verify)(token, 'PRIVATEKEY');
-
-        return next();
-    }catch(err){
-        return res.sendStatus(401)
-    }
-}
 
 
 export const getAllUsers = async (req, res) => {
@@ -36,24 +13,16 @@ export const getAllUsers = async (req, res) => {
 
 }
 
-export const getUserByAccount= async (req, res) => {
+export const getUserById = async (req, res) => {
     
     try{
         const user = await User.findAll({
             where: {
-                email_user: req.body.email_user,
-                password_user: req.body.password_user
+                cd_user: req.params.code,
             }
         });
 
-        const infoUser = {
-            user: user[0],
-            token: jwt.sign(user[0].toJSON(), 'PRIVATEKEY',{
-                expiresIn: 86400
-            })
-        }
-
-        res.json(infoUser)
+        res.json(user[0])
 
     }catch(err){
         res.json({message: err.message})

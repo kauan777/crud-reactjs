@@ -1,5 +1,8 @@
 GET http://localhost:5000/users 
 
+###
+
+GET http://localhost:5000/users/22
 
 ###
 POST http://localhost:5000/auth
