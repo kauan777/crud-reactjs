@@ -15,7 +15,7 @@ REQUISITOS
   photo_user varchar(200)
 );
 
-3 PASSO - VÁ NA PASTA SERVER -> CONGIG -> DATABASE.JS e coloque sua senha do mysql workbench
+3 PASSO - VÁ NA PASTA SERVER -> CONFIG -> DATABASE.JS e coloque sua senha do mysql workbench
 
 4 PASSO - ABRA A PASTA SERVER NO TERMINAL E RODE UM 'yarn' PARA INSTALAR AS DEPENDÊNCIAS
 
